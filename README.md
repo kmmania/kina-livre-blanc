@@ -31,7 +31,7 @@ Pour lancer ce projet sur votre machine :
 
 1.  **Cloner le dépôt :**
     ```bash
-    git clone https://github.com/VOTRE_NOM_UTILISATEUR/livre-blanc.git
+    git clone https://github.com/kmmania/livre-blanc.git
     cd livre-blanc
     ```
 
