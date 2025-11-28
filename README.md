@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# L'Athlète de 2025 - Le Manifeste
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Une expérience de lecture numérique pour le livre blanc "L'Athlète de 2025".**
 
-Currently, two official plugins are available:
+Ce projet est une application web React conçue pour offrir une lecture fluide, esthétique et accessible du manifeste écrit par Dac Linh Giao NGUYEN. Il aborde les défis psychologiques des athlètes d'endurance à l'ère du numérique.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📖 À propos du projet
 
-## React Compiler
+Cette application transforme un document statique en une expérience web éditoriale haut de gamme ("Digital White Paper").
+L'objectif est de permettre une lecture confortable sur tous les écrans (mobile/desktop) tout en offrant la possibilité de générer un PDF imprimable propre.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Fonctionnalités clés
+*   **Design Éditorial** : Mise en page soignée respectant une charte graphique précise (Police Serif, couleurs pastels).
+*   **Lecture Responsive** : Optimisé pour mobile, tablette et ordinateur.
+*   **Génération PDF** : Fonctionnalité d'impression native nettoyant l'interface (suppression des menus/boutons) pour un rendu papier impeccable.
+*   **Contenu Intégral** : Intégration complète du manifeste, des tensions de l'athlète moderne aux solutions proposées.
 
-## Expanding the ESLint configuration
+## 🛠 Stack Technique
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Ce projet est construit avec des outils modernes pour assurer performance et maintenabilité :
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   **Framework** : [React 19](https://react.dev/)
+*   **Langage** : [TypeScript](https://www.typescriptlang.org/)
+*   **Build Tool** : [Vite](https://vitejs.dev/)
+*   **Styling** : [Tailwind CSS](https://tailwindcss.com/)
+*   **Icônes** : [Lucide React](https://lucide.dev/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🚀 Installation et Lancement local
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Pour lancer ce projet sur votre machine :
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1.  **Cloner le dépôt :**
+    ```bash
+    git clone https://github.com/VOTRE_NOM_UTILISATEUR/livre-blanc.git
+    cd livre-blanc
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2.  **Installer les dépendances :**
+    ```bash
+    npm install
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3.  **Lancer le serveur de développement :**
+    ```bash
+    npm run dev
+    ```
+    L'application sera accessible sur `http://localhost:5173`.
+
+## 📦 Déploiement
+
+Le projet est optimisé pour un déploiement sur **Vercel** ou **Netlify**.
+
+**Via Vercel (Recommandé) :**
+1.  Connectez votre compte GitHub à Vercel.
+2.  Importez ce dépôt.
+3.  Vercel détectera automatiquement Vite/React.
+4.  Cliquez sur "Deploy".
+
+## 👤 Auteur
+
+**Dac Linh Giao NGUYEN**
+*Tech Entrepreneur & Marathonien*
+
+*   **LinkedIn** : [Dac Linh Giao NGUYEN](https://www.linkedin.com/in/daclinhgiao-nguyen/)
+*   **Email** : dlg.nguyen@gmail.com
+*   **Organisation** : KM Mania Research
+
+---
+
+## 📄 Licence et Droits
+
+© 2025 - Dac Linh Giao NGUYEN / KM Mania Research.
+
+Ce document est protégé par le droit d'auteur. Toutefois, le partage de la connaissance est encouragé. Vous êtes autorisé à diffuser ce manifeste, à condition de le transmettre dans son intégralité, sans modification, et de toujours citer l'auteur et la source.
