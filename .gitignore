@@ -42,3 +42,9 @@ dist/
 
 # Test coverage
 coverage/
+
+# WebStorm (JetBrains)
+.idea/
+*.iml
+out/
+.idea_modules/
