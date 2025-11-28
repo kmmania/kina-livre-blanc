@@ -1,45 +1,45 @@
 /* Styles globaux */
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #F8F8F8;
-  color: #333333;
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F8F8;
+    color: #333333;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1, h2, h3, h4, .serif {
-  font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 }
 
 /* Styles pour l'impression (PDF) */
 @media print {
-  .no-print {
-    display: none !important;
-  }
-  
-  body {
-    background-color: white !important;
-  }
-  
-  /* Force l'impression des couleurs de fond (ex: boîtes bleues/grises) */
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-  }
-  
-  /* Marges propres pour le PDF A4 */
-  @page {
-    margin: 1.5cm;
-  }
-  
-  /* Ajustements spécifiques pour éviter les coupures disgracieuses */
-  p, h2, h3, h4 {
-    orphans: 3;
-    widows: 3;
-  }
-  
-  .break-inside-avoid {
-    break-inside: avoid;
-  }
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        background-color: white !important;
+    }
+
+    /* Force l'impression des couleurs de fond (ex: boîtes bleues/grises) */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    /* Marges propres pour le PDF A4 */
+    @page {
+        margin: 1.5cm;
+    }
+
+    /* Ajustements spécifiques pour éviter les coupures disgracieuses */
+    p, h2, h3, h4 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    .break-inside-avoid {
+        break-inside: avoid;
+    }
 }
